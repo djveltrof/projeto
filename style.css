@@ -33,6 +33,7 @@ body {
     background-size: cover;*/
     /* background color image repeat position/size */
     background: var(--bg-url) no-repeat center/cover;
+    height: 100vh;
 }
 
 body * {
@@ -157,4 +158,15 @@ ul li a:hover{
     padding: 24px 0px;
     text-align: center;
     font-size: 14px;
+  }
+
+  /* MEDIA QUERIES */
+
+  @media (min-width: 700px){
+    :root {
+        --bg-url: url(./assets/bg-dark.jpg);
+    }
+    .light {
+        --bg-url: url(./assets/bg-ligth.jpg);
+    }
   }
